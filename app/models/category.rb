@@ -3,5 +3,5 @@ class Category < ActiveRecord::Base
   has_many :articles
   
   scope :active, where('active = ?', true)
-  scope :alphabetical, order('title')
+  scope :alphabetical, order('name')
 end
